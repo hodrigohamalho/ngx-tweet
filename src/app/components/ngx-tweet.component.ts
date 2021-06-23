@@ -35,7 +35,7 @@ export class NgxTweetComponent implements OnInit {
             .loadScript()
             .subscribe((twitterData: any) => {
                 this._updateTwitterScriptLoadingState();
-                twitterData.widgets.createTweet(this.tweetId, this._elementRef.nativeElement, {});
+                twitterData.widgets.createTweet(this.tweetId, this._elementRef.nativeElement, { theme: "dark" });
             });
     }
 
